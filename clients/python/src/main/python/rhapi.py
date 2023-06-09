@@ -429,7 +429,7 @@ class RhApi:
         Get data rows
         """
 
-        rowsLimit = self.query(qid, verbose=True)["rowsLimit"]
+        rowsLimit = 4294967295 # instead of @sself.query(qid, verbose=True)["rowsLimit"]
         count = int(self.count(qid))
 
         ps = ["query", qid]
